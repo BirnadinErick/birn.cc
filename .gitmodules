@@ -1,0 +1,3 @@
+[submodule "writeups/100-days-of-code"]
+	path = writeups/100-days-of-code
+	url = https://github.com/BirnadinErick/100-days-of-code.git
