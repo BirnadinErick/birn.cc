@@ -1,0 +1,5 @@
+# ignore the recording, later for GITLFS
+**/rec/
+*.mp4
+*.mkv
+
