@@ -1,8 +1,10 @@
 <script lang="ts">
 	import HomeHeroCta from '../lib/components/HomeHeroCTA.svelte';
+	import CTASpecial from '../lib/components/CTASpecial.svelte'; 
+
 </script>
 
-<nav class="flex justify-end p-6 lg:p-10 border-b-2 border-gray-400">
+<nav class="flex justify-end p-6 lg:px-10 lg:py-8 border-b-2 border-gray-400">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		fill="none"
@@ -20,7 +22,7 @@
 </nav>
 
 <section class="lg:flex lg:flex-col items-center justify-around lg:h-screen">
-	<div class="mt-8 mx-16 lg:m-64 font-sans lg:flex justify-between items-center">
+	<div class="mt-8 mx-16 lg:m-64 font-sans lg:flex justify-between items-center space-y-4">
 		<div class="mr-16 lg:mr-24">
 			<h3 class="text-2xl lg:text-4xl font-bebas">👋, I'm</h3>
 			<h1 class="text-5xl lg:text-9xl font-syne">
@@ -37,29 +39,20 @@
 			</h2>
 		</div>
 
-		<div class="my-8 space-y-2	 lg:space-y-4">
-			<HomeHeroCta txt="profit off of me" url="/profit-for-you" isSpecial={true} />
+		<div class="my-8 space-y-2 lg:space-y-4">
+			<CTASpecial txt="profit off of me" url="/profit-for-you" />
 			<HomeHeroCta txt="know me more" url="/me" />
 			<HomeHeroCta txt="fyi, my blogs" url="/fyi" />
 			<HomeHeroCta txt="what have I done" url="/projects" />
 		</div>
 	</div>
 
-	<div class="font-syne hidden lg:visible lg:flex lg:flex-col items-center space-y-2">
-		<p class="animate-pulse">what can I do for you</p>
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			fill="none"
-			viewBox="0 0 24 24"
-			stroke-width="1.5"
-			stroke="currentColor"
-			class="w-8 h-8 text-green animate-bounce"
-		>
-			<path
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
-			/>
-		</svg>
-	</div>
+</section>
+
+<section class="my-16 p-16">
+
+<p class="text-5xl font-syne">
+For <span class="text-green">You</span> <br> <span class="text-purple">I can</span>
+</p>
+
 </section>

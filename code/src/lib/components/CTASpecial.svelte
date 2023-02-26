@@ -5,7 +5,7 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-	class="flex cursor-pointer group bg-light-gray px-6 py-4 space-x-4 lg:space-x-8 rounded-sm justify-between items-center lg:hover:text-green transition-colors duration-300 ease-out"
+	class="flex pointer group bg-light-gray px-6 py-4 space-x-4 lg:space-x-8 rounded-sm justify-between items-center lg:hover:text-purple transition duration-300 ease-out shadow-purple/40 hover:shadow-purple/70 shadow-md my-4 hover:shadow-lg"
 	on:click={() => {
 		document.location = url;
 	}}
@@ -15,7 +15,7 @@
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 20 20"
 		fill="currentColor"
-		class="w-5 h-5 text-green lg:group-hover:animate-pulse"
+		class="w-5 h-5 text-purple lg:group-hover:animate-pulse"
 	>
 		<path
 			fill-rule="evenodd"
